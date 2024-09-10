@@ -1,8 +1,8 @@
 #!/bin/bash
 
-gau {urlname} | grep "=" | qsreplace hack\" -a | 
+gau mastercard.us | grep "=" | qsreplace hack\" -a | 
 
-while read url 
+while read url
 do
     target= `curl -s -l $url | egrep -o '(hack"|hack\\")'`
     echo -e "Target: \e[1,31m $url \e[0m" "$target" "\n";
