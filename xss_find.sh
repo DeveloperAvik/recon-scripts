@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gau mastercard.us | grep "=" | qsreplace hack\" -a | 
+gau seosherpa.com | grep "=" | qsreplace hack\" -a | 
 
 while read url
 do
